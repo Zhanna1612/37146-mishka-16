@@ -1,0 +1,131 @@
+.week-item {
+  padding: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 100px;
+  }
+}
+
+.week-item__title {
+  padding: 25px 0 21px;
+
+  .titleh2 {
+    margin: 0;
+    padding: 0 0 4px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 43px;
+      line-height: 50px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+
+.week-item__addition {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #63d1bb;
+  text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    width: 145px;
+    padding: 30px 30px 0;
+    text-align: center;
+  }
+}
+
+.week-item__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.week-item__description {
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 160px 60px 0 144px;
+  }
+}
+
+.week-item__text {
+  margin: 0;
+}
+
+.week-item__list {
+  .list-none();
+  padding: 13px 0 29px;
+}
+
+.week-item__feature {
+  display: flex;
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #ececec;
+
+  span:first-child {
+    width: 98px;
+  }
+}
+
+.week-item__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+
+.week-item__order {
+  .button {
+    max-width: 260px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: -136px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 290px;
+    margin-top: -136px;
+    margin-left: 144px;
+  }
+}
+
+.week-item__price {
+  margin: 0;
+  padding: 19px 0 25px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
